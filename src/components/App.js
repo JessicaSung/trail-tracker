@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
-import firebase, { auth, provider } from '../firebase';
 import '../styles/App.css';
+
+import AddTrail from './AddTrail';
+// import firebase, { auth, provider } from '../firebase';
+// import TrailTable from './TrailTable';
 
 class App extends Component {
   render() {
@@ -9,7 +12,8 @@ class App extends Component {
         <header className="App-header">
           <h1 className="App-title">Trail Tracker app</h1>
         </header>
-
+        <AddTrail />
+        {/* <TrailTable /> */}
       </div>
     );
   }
